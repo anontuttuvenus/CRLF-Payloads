@@ -30,15 +30,15 @@ When the web server receives the request, it will interpret the payload as a new
 
 More Payloads:
 
-0D%0A
-r\n
-n
-0A
-r
-0D
-250D%250A
-250A
-250D
+%0D%0A
+\r\n
+\n
+%0A
+\r
+%0D
+%250D%250A
+%250A
+%250D
 %25250D%25250A
 %25250A
 %25250D
