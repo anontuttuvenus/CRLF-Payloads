@@ -29,13 +29,16 @@ To use a CRLF injection payload, you can simply add the payload to the end of a 
 When the web server receives the request, it will interpret the payload as a newline character and process the request accordingly. This could allow you to bypass certain security controls, such as WAFs.
 
 To use a CRLF injection payload in the body of a web request, you can simply add the payload to the body of the request. For example, if you are making a POST request to the URL http://example.com/index.php, you could add the payload %0D%0A to the body of the request, like this:
-http
-Copy
+
+
 POST /index.php HTTP/1.1
 Host: example.com
 Content-Type: application/x-www-form-urlencoded
 
 username=admin&password=password%0D%0A
+
+
+
 When the web server receives the request, it will interpret the payload as a newline character and process the request accordingly. This could allow you to bypass certain security controls, such as WAFs.
 
 In this case, the attacker has injected a newline character into the password field of the login form. This will cause the web server to interpret the password as two separate values, "password" and "%0D%0A". This could allow the attacker to bypass the password authentication and gain access to the web server.
