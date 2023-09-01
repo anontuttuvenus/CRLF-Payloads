@@ -31,9 +31,9 @@ When the web server receives the request, it will interpret the payload as a new
 To use a CRLF injection payload in the body of a web request, you can simply add the payload to the body of the request. For example, if you are making a POST request to the URL http://example.com/index.php, you could add the payload %0D%0A to the body of the request, like this:
 
 
-POST /index.php HTTP/1.1                                                                                                                                           
-Host: example.com                                       
-Content-Type: application/x-www-form-urlencoded
+POST /index.php HTTP/1.1                
+Host: example.com                 
+Content-Type: application/x-www-form-urlencoded         
 
 username=admin&password=password%0D%0A
 
